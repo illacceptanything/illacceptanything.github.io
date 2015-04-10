@@ -1,0 +1,1 @@
+We are accepting commits with blue-prints for rockets and launch code, landing code and space ship operating systems. Submissions for android space companions are welcome. 
