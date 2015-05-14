@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Aaaaaaaa
-permalink: index.html
+permalink: /index.html
 ---
 
 # illacceptanything.github.io
