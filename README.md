@@ -1,3 +1,9 @@
+---
+layout: post
+title: Aaaaaaaa
+permalink: /index.html
+---
+
 # illacceptanything.github.io
 
 ![](https://media.giphy.com/media/wPrqe5846Z9GU/giphy.gif)
