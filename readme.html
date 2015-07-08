@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>ReadMe</title>
+
+<!--CSS-->
+</head>
+<body>
+  <xmp id="content" theme="united" style="display:none;">
+</xmp>
+
+<!-- Script that gets the curent readme in this repo -->
+<script> var req = new XMLHttpRequest();
+  req.onload = function() {
+    var xmpNode = document.getElementById('content');
+    xmpNode.appendChild(document.createTextNode(this.responseText));
+  }
+  req.open('GET', 'readme.md', false);
+  req.send();</script>
+
+<!--JS-->
+<script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
+</body>
+</html>
