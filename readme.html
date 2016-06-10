@@ -1,23 +1,26 @@
-<html>
-<head>
-<title>ReadMe</title>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>README | I'll Accept Anything</title>
+        <meta name="description" content="The project where literally anything goes">
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, width=device-width">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="css/main.css" rel="stylesheet" type="text/css" charset="utf-8">
+    </head>
+    <body>
+        <xmp id="content" theme="united" style="display:none;"></xmp>
 
-<!--CSS-->
-</head>
-<body>
-  <xmp id="content" theme="united" style="display:none;">
-</xmp>
+        <!-- Script that gets the curent readme in this repo -->
+        <script> var req = new XMLHttpRequest();
+            req.onload = function() {
+                var xmpNode = document.getElementById('content');
+                xmpNode.appendChild(document.createTextNode(this.responseText));
+            }
+            req.open('GET', 'readme.md', false);
+            req.send();
+        </script>
 
-<!-- Script that gets the curent readme in this repo -->
-<script> var req = new XMLHttpRequest();
-  req.onload = function() {
-    var xmpNode = document.getElementById('content');
-    xmpNode.appendChild(document.createTextNode(this.responseText));
-  }
-  req.open('GET', 'readme.md', false);
-  req.send();</script>
-
-<!--JS-->
-<script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
-</body>
+        <script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
+    </body>
 </html>
