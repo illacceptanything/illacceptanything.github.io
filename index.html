@@ -1,148 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-</head>
-<body>
-    <img src="pusheen/pusheen1.png">
-    <img src="pusheen/pusheen2.jpg">
-    <img src="pusheen/pusheen3.gif">
-        <div style="position:absolute; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0;"
-        id="main" allowfullscreen></div>
-        <div width="250px" height="220px" style="position: absolute;top: 0; left: 0;" 
-        id="wave"></div>
-        <div width="25%" height="25%" style="position: absolute;top: 0; right: 0;" 
-        id="wave2"></div>
-        <div width="350px" height="300px" style="position: absolute;bottom: 0; right: 0;" 
-        id="forester"></div>
-        <div width="25%" height="25%" style="position: absolute;bottom: 0; left: 0;" 
-        id="refactoring"></div>
-        <script>
-          var tag = document.createElement('script');
-          tag.src = "https://www.youtube.com/player_api";
-          var firstScriptTag = document.getElementsByTagName('script')[0];
-          firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    <head>
+        <title>I'll Accept Anything</title>
+        <meta name="description" content="The project where literally anything goes">
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, width=device-width">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="css/main.css" rel="stylesheet" type="text/css" charset="utf-8">
+    </head>
+    <body>
+        <img src="pusheen/pusheen1.png">
+        <img src="pusheen/pusheen2.jpg">
+        <img src="pusheen/pusheen3.gif">
 
-          var player, wave, wave2, forester, refactoring;
-          function onYouTubePlayerAPIReady() {
-            player = new YT.Player('main', {
-                height: '100%',
-                width: '100%',
-                videoId: 'rGxHdRPGqgc',
-                playerVars: {
-                  autoplay: 1,
-                  start: 3,
-                  controls: 0,
-                  disablekb: 1,
-                  hl: 'en-us',
-                  loop: 1,
-                  modestbranding: 1,
-                  showinfo: 0,
-                  autohide: 1,
-                  color: 'black',
-                  iv_load_policy: 3,
-                  theme: 'dark',
-                  rel: 0
-                },
-                events: {
-                    'onReady': onPlayerReady,
-                }
-            });
-            wave = new YT.Player('wave', {
-                height: '220',
-                width: '250',
-                videoId: 'X7lmGge56TE',
-                playerVars: {
-                  autoplay: 1,
-                  start: 20,
-                  controls: 0,
-                  disablekb: 1,
-                  loop: 1,
-                  modestbranding: 1,
-                  showinfo: 0,
-                  autohide: 1,
-                  color: 'black',
-                  iv_load_policy: 3,
-                  theme: 'dark',
-                  rel: 0
-                },
-                events: {
-                    'onReady': onPlayerReady,
-                }
-            });
-            wave2 = new YT.Player('wave2', {
-                height: '25%',
-                width: '25%',
-                videoId: '4qS_5Ntev94',
-                playerVars: {
-                  autoplay: 1,
-                  start: 20,
-                  controls: 0,
-                  disablekb: 1,
-                  loop: 1,
-                  modestbranding: 1,
-                  showinfo: 0,
-                  autohide: 1,
-                  color: 'black',
-                  iv_load_policy: 3,
-                  theme: 'dark',
-                  rel: 0
-                },
-                events: {
-                    'onReady': onPlayerReady,
-                }
-            });
-            forester = new YT.Player('forester', {
-                height: '300',
-                width: '350',
-                videoId: '4ivxsId0SVo',
-                playerVars: {
-                  autoplay: 1,
-                  start: 0,
-                  controls: 0,
-                  disablekb: 1,
-                  hl: 'en-us',
-                  loop: 1,
-                  modestbranding: 1,
-                  showinfo: 0,
-                  autohide: 1,
-                  color: 'black',
-                  iv_load_policy: 3,
-                  theme: 'dark',
-                  rel: 0
-                }
-            });
-            refactoring = new YT.Player('refactoring', {
-                height: '25%',
-                width: '25%',
-                videoId: 'WG3OSWI42yU',
-                playerVars: {
-                  autoplay: 1,
-                  start: 2,
-                  controls: 0,
-                  disablekb: 1,
-                  hl: 'en-us',
-                  loop: 1,
-                  modestbranding: 1,
-                  showinfo: 0,
-                  autohide: 1,
-                  color: 'black',
-                  iv_load_policy: 3,
-                  theme: 'dark',
-                  rel: 0
-                },
-                events: {
-                    'onReady': onPlayerReady,
-                }
-            });
-          }
-        function onPlayerReady(event){
-            player.mute();
-            wave.mute();
-            wave2.mute();
-            refactoring.mute();
-        }
-        </script>
-	<button type="button" onclick="location.href = 'http://www.reddit.com/r/thebutton';">The Button</button>
-</body>
+        <button type="button" onclick="location.href = 'butt.html';">The Button</button>
 
+        <script src="js/main.js"></script>
+    </body>
 </html>
