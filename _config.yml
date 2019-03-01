@@ -12,3 +12,5 @@ github_username:  illacceptanything
 
 # Build settings
 markdown: kramdown
+plugins:
+  - jekyll-sitemap
